@@ -1,18 +1,22 @@
-Problem:
+# Problem:
 A vending machine needs to manage different states, including "Idle", "ItemSelected", "Dispensing", and "OutOfOrder". Each state has specific rules and restrictions regarding allowed operations, and the vending machine has associated attributes like item inventory and balance.
 Requirements:
 1.	Idle State:
 ○	Allow item selection.
 ○	Disallow dispensing items and inserting coins.
-2.	ItemSelected State:
+
+3.	ItemSelected State:
 ○	Allow inserting coins and dispensing items.
 ○	Disallow item selection.
-3.	Dispensing State:
+
+5.	Dispensing State:
 ○	Allow no operations.
 ○	Automatically transition back to the "Idle" state after dispensing is complete.
-4.	OutOfOrder State:
+
+7.	OutOfOrder State:
 ○	Disallow all operations.
 Current System: The system currently relies on conditional statements within the VendingMachine class to check the machine state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.
+
 Implement the State Pattern to improve code maintainability and flexibility:
 1.	Define VendingMachine States:
 ○	Create separate classes representing different machine states: IdleState, ItemSelectedState, DispensingState, and OutOfOrderState.
@@ -31,7 +35,9 @@ Implement the State Pattern to improve code maintainability and flexibility:
 
 
 
-
-
-
+# UML DIAGRAM
 ![image](https://github.com/user-attachments/assets/35feafc0-4aca-402a-88d9-3ea464a9c792)
+
+
+# Source Code
+CCS322-18/CSL322-18 > Week 3 - 4 State Pattern > Module State Design Pattern
